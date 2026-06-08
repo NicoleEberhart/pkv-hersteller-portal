@@ -16,24 +16,29 @@ Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Herstel
 
 ---
 
-## Über dieses Portal
+# Über dieses Portal
 Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller von Apotheken- und Praxisverwaltungssystemen. Ziel ist ein schneller, transparenter Zugang zu Spezifikationen, Schnittstellen und Ansprechpartnern.
 
-# Für AVS-Hersteller
-Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS) und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.
-→ [Zum AVS-Bereich](docs/avs.md)
 
-# Für PVS-Hersteller
-Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte**
-relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
+> Hinweis: Die hier bereitgestellten Inhalte dienen der technischen Information. Verbindliche Vorgaben ergeben sich aus den jeweils gültigen Spezifikationen und gesetzlichen Grundlagen.
 
-## PKV-Besonderheiten auf einen Blick
+
+# PKV-Besonderheiten auf einen Blick
 - Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)**. 
 - Für E-Rezept und ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** ins PVS übermittelt.
 - Der **OCI** überträgt nur die KVNR – die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
 - Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische Privatrezept bleibt jederzeit möglich.
 
-## Spezifikationen & Leitfäden
+**Gleich bleibt:** Datenmodell, Statusmodell und Schnittstellen des E-Rezepts; Signaturprozesse; FHIR-Profile; ePA-Grundmechanik.
+**Anders ist:** kein eGK-Einsatz, KVNR-Übermittlung per OCI, aktive ePA-Freigabe per App, freiwilliges E-Rezept und WF200 statt WF160.
+
+# Für AVS-Hersteller
+Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS) und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind. → [Zum AVS-Bereich](docs/avs.md)
+
+# Für PVS-Hersteller
+Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
+
+# Spezifikationen & Leitfäden
 - [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 - [Anforderungskatalog Verordnungssoftware (BMV-Ä Anlage 23, KBV)](https://www.kbv.de/html/bundesmantelvertrag.php)
@@ -44,5 +49,5 @@ relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
 # Wichtige Links
 → [Gesammelte Linksammlung](docs/links.md)
 
-# Kontakt & Support
-→ [Ansprechpartner](docs/kontakt.md)
+## Kontakt & Support
+→ [Ansprechpartner] ehealth-ti@pkv.de
