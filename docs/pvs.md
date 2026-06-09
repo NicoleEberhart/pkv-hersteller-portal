@@ -3,9 +3,11 @@
 Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.
 
 ## Umsetzungsthemen für PVS
-- **Online Check-in (OCI):** PVS-Feature zur sicheren Übernahme der KVNR (inkl. QR-Code/VZD, KIM-Infrastruktur, SM(C)-B, Konnektor/TI-Anbindung).
-- **E-Rezept ausstellen (WF200):** Verordnung im PVS erstellen und elektronisch   signieren – Prozess analog zur GKV, inkl. Komfortsignatur.
-- **ePA Zugriff über Freigabe ePA-App:** Dokumente abrufen und in die ePA einstellen über das PVS. 
+- **Online Check-in (OCI):** PVS-Feature zur sicheren Übernahme der KVNR (inkl. QR-Code/VZD, KIM-Infrastruktur, SM(C)-B, Konnektor/TI-Anbindung
+  [Implemetierungsleitfaden Primärsysteme OCI (gematik)] (https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
+- **E-Rezept ausstellen (WF200):** Verordnung im PVS erstellen und elektronisch   signieren – Prozess analog zur GKV, inkl. Komfortsignatur. - [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
+- **ePA Zugriff über Freigabe ePA-App:** Dokumente abrufen und in die ePA einstellen über das PVS.
+[Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
 # Online Check-in
 Der Online Check-in ist das PKV-Pendant zur elektronischen Ersatzbescheinigung (eEB) der GKV und dient der einmaligen, digitalen Übermittlung der Versichertenstammdaten – insbesondere der KVNR – an die Praxis, da PKV-Versicherte keine eGK mit aktualisierten Stammdaten vorlegen . Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen: KIM-Empfang plus automatischer FHIR-Datenübernahme.
@@ -32,10 +34,9 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 ## Spezifikationen & Leitfäden
 - [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
-- [Anforderungskatalog Verordnungssoftware (BMV-Ä Anlage 23, KBV)](https://www.kbv.de/html/bundesmantelvertrag.php)
-- [Technische Anlage E-Rezept inkl. Anlagen und Beispiele (KBV)](https://update.kbv.de/ita-update/DigitaleMuster/ERP/)
-- [Fachliches Datenmodell Verordnungsdatensatz / FHIR-Profile (KBV)](https://simplifier.net/erezept)
-- [TI-Score zum Umsetzungsstand der Primärsysteme](https://www.ti-score.de/)
+- [Implemetierungsleitfaden Primärsysteme OCI (gematik)] (https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
+- https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction
+
 
 ## Kontakt
 Bei Rückfragen zur PVS-Anbindung: ehealth-ti@pkv.de
