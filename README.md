@@ -38,14 +38,6 @@ Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS)
 # Für PVS-Hersteller
 Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
 
-# Spezifikationen & Leitfäden
-- [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
-- [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
-- [Anforderungskatalog Verordnungssoftware (BMV-Ä Anlage 23, KBV)](https://www.kbv.de/html/bundesmantelvertrag.php)
-- [Technische Anlage E-Rezept inkl. Anlagen und Beispiele (KBV)](https://update.kbv.de/ita-update/DigitaleMuster/ERP/)
-- [Fachliches Datenmodell Verordnungsdatensatz / FHIR-Profile (KBV)](https://simplifier.net/erezept)
-- [TI-Score zum Umsetzungsstand der Primärsysteme](https://www.ti-score.de/)
-
 # Wichtige Links
 → [Gesammelte Linksammlung](docs/links.md)
 
