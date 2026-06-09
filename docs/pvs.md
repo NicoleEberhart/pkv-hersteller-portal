@@ -7,7 +7,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
-- [E-Rezept: Workflow Workflow 200](#e-rezept-workflow-160-vs-workflow-200)
+- [E-Rezept: Workflow Workflow 200](#e-rezept-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
 - [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
 - [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
