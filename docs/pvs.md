@@ -10,7 +10,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [E-Rezept: Workflow 160 vs. Workflow 200](#e-rezept-workflow-160-vs-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
 - [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
-  - [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
+- [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
 - [Kontakt](#kontakt)
 
@@ -51,7 +51,7 @@ fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
 Das PVS ruft Dokumente aus der ePA ab und stellt strukturierte Daten ein,
 sofern der Versicherte die Praxis per ePA-App berechtigt hat.
 
-### Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
+## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das
 Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
 - **Einwilligung zur Abrechnungsinformation:** Für FlowTypes 200/209 wird der
