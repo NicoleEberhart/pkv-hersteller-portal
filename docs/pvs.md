@@ -7,7 +7,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
-- [E-Rezept: Workflow 160 vs. Workflow 200](#e-rezept-workflow-160-vs-workflow-200)
+- [E-Rezept: Workflow Workflow 200](#e-rezept-workflow-160-vs-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
 - [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
 - [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
@@ -33,7 +33,7 @@ Praxis, da PKV-Versicherte keine eGK mit aktualisierten Stammdaten vorlegen.
 Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
 KIM-Empfang plus automatischer FHIR-Datenübernahme.
 
-## E-Rezept: Workflow 160 vs. Workflow 200
+## E-Rezept: Workflow 200
 Workflow **200** ist **kein neuer Prozess**: Er nutzt dasselbe Datenmodell,
 Statusmodell und dieselben Schnittstellen wie Workflow **160**. Der einzige
 fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
