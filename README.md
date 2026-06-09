@@ -9,10 +9,8 @@ Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Herstel
 - [Über dieses Portal](#über-dieses-portal)
 - [Für AVS-Hersteller](#für-avs-hersteller)
 - [Für PVS-Hersteller](#für-pvs-hersteller)
-- [Spezifikationen & Dokumente](#spezifikationen--dokumente)
 - [Wichtige Links](#wichtige-links)
 - [Kontakt & Support](#kontakt--support)
-- [Änderungshistorie](#änderungshistorie)
 
 ---
 
@@ -43,4 +41,4 @@ Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bün
 → [Gesammelte Linksammlung](docs/links.md)
 
 ## Kontakt & Support
-→ [Ansprechpartner] ehealth-ti@pkv.de
+→ Ansprechpartner ehealth-ti@pkv.de
