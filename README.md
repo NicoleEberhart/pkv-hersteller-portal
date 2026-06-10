@@ -38,7 +38,7 @@ Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS)
 Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
 
 # Wichtige Links
-→ [Gesammelte Linksammlung](docs/links.md)
+→ [Linksammlung](docs/links.md)
 
 ## Kontakt & Support
 → Ansprechpartner ehealth-ti@pkv.de
