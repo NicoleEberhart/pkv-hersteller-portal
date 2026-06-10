@@ -7,10 +7,13 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
-  - [Testen](#Testen)
+  - [Testen](#testen)
 - [E-Rezept: Workflow 200](#e-rezept-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
 - [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
+  - [Berechtigungsmodell](#berechtigungsmodell)
+  - [Zugriffswege](#zugriffswege)
+  - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
 - [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
 - [Kontakt](#kontakt)
@@ -33,7 +36,12 @@ Ersatzbescheinigung (eEB) der GKV und dient der einmaligen, digitalen
 Praxis, da PKV-Versicherte keine eGK mit aktualisierten Stammdaten vorlegen.
 Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
 KIM-Empfang plus automatischer FHIR-Datenübernahme.
-[Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
+Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
+
+### Sonderfall: Kein Online Check-in vorhanden
+Liegt keine OCI-Nachricht vor (z. B. Patient nutzt die App nicht), muss die
+KVNR auf anderem Weg erfasst werden. Der E-Rezept-Prozess (WF200) bleibt
+ansonsten unverändert.
 
 ### Testen
 - [Beispiel-Testdatensätze](https://github.com/pkvjulian/oci_pkv_testdaten)
@@ -55,8 +63,24 @@ fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
 
 ## Elektronische Patientenakte (ePA)
 Das PVS ruft Dokumente aus der ePA ab und stellt strukturierte Daten ein,
-sofern der Versicherte die Praxis per ePA-App berechtigt hat.
- [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
+sofern der Versicherte die Praxis dazu berechtigt hat. Funktional entspricht
+die Umsetzung der GKV – die PKV-Besonderheit liegt allein im Zugang
+(OCI statt eGK, Berechtigung per ePA-App).
+
+### Berechtigungsmodell
+Privatversicherte erteilen die Befugnis **aktiv über die ePA-App** ihrer Krankenversicherung; ein kartengebundener Zugriff (eGK) entfällt.
+- Die Befugnis ist in der Regel **zeitlich begrenzt** und kann vom Versicherten jederzeit widerrufen werden.
+- Das PVS muss damit umgehen, dass ein Zugriff **nicht oder nicht mehr** besteht (fehlende/abgelaufene Berechtigung sauber abfangen).
+
+### Zugriffswege
+- **Lesen:** Abruf vorhandener Dokumente und strukturierter Daten aus dem ePA-Aktenkonto.
+- **Schreiben:** Einstellen von Dokumenten und strukturierten Daten.
+
+### Bezug zur „ePA für alle" 
+Die Umsetzung erfolgt im Rahmen der **„ePA für alle"**. Maßgeblich ist die
+jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher
+vor der Implementierung prüfen.
+Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
 
 ## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
