@@ -7,6 +7,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
+  - [Sonderfall](#sonderfall:kein-online-check-in-vorhanden)
   - [Testen](#testen)
 - [E-Rezept: Workflow 200](#e-rezept-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
