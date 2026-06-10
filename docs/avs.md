@@ -11,6 +11,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
   Versicherte die Apotheke **aktiv per ePA-App**.
 - Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische
   Privatrezept bleibt jederzeit möglich.
+ - Nach der Bezahlung erhalten Privatversicherte von der Apotheke eine digitale Apothekenrechnung (=Kostenbeleg) , Beispiel: https://github.com/DAV-ABDA/eRezept-Beispiele/blob/main/PKV/PZN_Mehrfachverordnung/PZN_MV_1/PZN_MV1_Kostenbeleg.pdf
 
 ## Umsetzungsthemen für AVS
 - **ePA-Zugriff in der Apotheke:** Zugriff über Rezeptabruf oder Befugnis
