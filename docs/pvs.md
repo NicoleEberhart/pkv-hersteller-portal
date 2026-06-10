@@ -32,6 +32,10 @@ Ersatzbescheinigung (eEB) der GKV und dient der einmaligen, digitalen
 Praxis, da PKV-Versicherte keine eGK mit aktualisierten Stammdaten vorlegen.
 Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
 KIM-Empfang plus automatischer FHIR-Datenübernahme.
+[Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
+
+### Testen
+[Beispiel-Testdatensätze](https://github.com/pkvjulian/oci_pkv_testdaten)
 
 ## E-Rezept: Workflow 200
 Workflow **200** ist **kein neuer Prozess**: Er nutzt dasselbe Datenmodell,
@@ -50,6 +54,8 @@ fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
 ## Elektronische Patientenakte (ePA)
 Das PVS ruft Dokumente aus der ePA ab und stellt strukturierte Daten ein,
 sofern der Versicherte die Praxis per ePA-App berechtigt hat.
+ [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
+
 
 ## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das
@@ -63,10 +69,12 @@ Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
   bei FdV und Apotheke.
 
 ## Spezifikationen & Leitfäden
+- [PKV-IK-Liste](https://github.com/pkvjulian/PKV-IK-Liste)
 - [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 - [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
+
 
 ## Kontakt
 Bei Rückfragen zur PVS-Anbindung: ehealth-ti@pkv.de
