@@ -7,6 +7,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
+  - [Testen](#Testen)
 - [E-Rezept: Workflow 200](#e-rezept-workflow-200)
   - [Die 3 technischen Änderungen gegenüber Workflow 160](#die-3-technischen-änderungen-gegenüber-workflow-160)
 - [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
@@ -35,7 +36,8 @@ KIM-Empfang plus automatischer FHIR-Datenübernahme.
 [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 
 ### Testen
-[Beispiel-Testdatensätze](https://github.com/pkvjulian/oci_pkv_testdaten)
+- [Beispiel-Testdatensätze](https://github.com/pkvjulian/oci_pkv_testdaten)
+- Um einen Testdatensatz zu erhalten, senden Sie eine Mail an ehealth-ti@pkv.de
 
 ## E-Rezept: Workflow 200
 Workflow **200** ist **kein neuer Prozess**: Er nutzt dasselbe Datenmodell,
