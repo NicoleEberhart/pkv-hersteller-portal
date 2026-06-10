@@ -37,4 +37,4 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [FHIR-Profile zum PKV Abgabe-und Abrechnungsinformationen](https://simplifier.net/erezept-patientenrechnung/)
 
 ## Kontakt
-Bei Rückfragen zur AVS-Anbindung: ehealth-ti@pkv.de
+Bei Rückfragen wenden Sie sich an: ehealth-ti@pkv.de
