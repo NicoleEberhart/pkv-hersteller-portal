@@ -15,7 +15,7 @@ Telematikinfrastruktur (TI) und der Anwendungen für Privatversicherte.
 
 ## E-Rezept
 - [Anforderungskatalog Verordnungssoftware (BMV-Ä Anlage 23, KBV)](https://www.kbv.de/html/bundesmantelvertrag.php)
-- [Technische Anlage E-Rezept]([https://update.kbv.de/ita-update/DigitaleMuster/ERP/](https://www.abda.de/themen/e-health/datenaustausch-pkv/))
+- [Technische Anlage E-Rezept](https://www.abda.de/themen/e-health/datenaustausch-pkv/)
 - [PKV-E-Rezept-Beispiele](https://github.com/DAV-ABDA/eRezept-Beispiele/tree/main/PKV)
 - [Das E-Rezept für Privatversicherte](https://www.pkv.de/wissen/versorgung/digitale-medizin/e-rezept/)
 - [Welche PKV bietet das E-Rezept an?](https://www.das-e-rezept-fuer-deutschland.de/app)
