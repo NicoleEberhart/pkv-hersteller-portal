@@ -22,8 +22,6 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Umsetzungsthemen für AVS
 - **ePA-Zugriff in der Apotheke:** Zugriff über Rezeptabruf oder Befugnis
   eines Stammkunden per ePA-App.
-- **Elektronische Medikationsliste:** Umsetzung der Medikationsliste im
-  ePA-Aktenkonto (FHIR); optional ein systemgestützter AMTS-Check.
 - **Annahme PKV-E-Rezept (WF200):** Umsetzung gemäß Implementierungsleitfaden
   Primärsysteme.
 - **Apothekenrechnung (ehemals Kostenbeleg):** Abrechnung Privatversicherter
