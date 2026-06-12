@@ -27,10 +27,6 @@ Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller
 - Der **OCI** überträgt nur die KVNR – die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
 - Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische Privatrezept bleibt jederzeit möglich.
 
-**Gleich bleibt:** Datenmodell, Statusmodell und Schnittstellen des E-Rezepts; Signaturprozesse; FHIR-Profile; Umsetzung ePA.
-
-**Anders ist:** kein eGK-Einsatz, KVNR-Übermittlung per OCI, aktive ePA-Freigabe per App, freiwilliges E-Rezept und WF200 statt WF160.
-
 # Für AVS-Hersteller
 Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS) und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind. → [Zum AVS-Bereich](docs/avs.md)
 
