@@ -49,18 +49,8 @@ ansonsten unverändert.
 - Um einen Testdatensatz zu erhalten, senden Sie eine Mail an ehealth-ti@pkv.de
 
 ## E-Rezept: Workflow 200
-Workflow **200** ist **kein neuer Prozess**: Er nutzt dasselbe Datenmodell,
-Statusmodell und dieselben Schnittstellen wie Workflow **160**. Der einzige
-fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
-
-### Die 3 technischen Änderungen gegenüber Workflow 160
-1. **FlowType setzen** – bei `POST /Task/$create` den Parameter
-   `flowType = "200"` übergeben (Direktzuweisung: `"209"`).
-2. **Versicherungstyp setzen** – im Verordnungsdatensatz
-   `Coverage.type.coding.code = "PKV"`. Der Fachdienst prüft dies bei
-   `$activate` und weist die Operation sonst ab.
-3. **KVNR als Identifier** – Versicherten über die PKV-KVNR referenzieren
-   (Datenmodell sonst identisch zum GKV-Datensatz).
+Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zur GKV und hat lediglich eine andere Workflow-Nummer. Der einzige fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
+[Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 
 ## Elektronische Patientenakte (ePA)
 Das PVS ruft Dokumente aus der ePA ab und stellt strukturierte Daten ein,
