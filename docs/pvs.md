@@ -78,6 +78,7 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
 
 ## Weiterführende Informationen 
+- [Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md) 
 -	[Was Leistungsebringer zur ePA wissen müssen](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/was-leistunsgerbringer-zur-elektronischen-patientenakte-epa-wissen-muessen/)
 -	[Leistungserbringer ermöglichen mit dem E-Rezept mehr Komfort für Privatversicherte](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/leistungserbringer-schaffen-mit-dem-e-rezept-mehr-komfort-fuer-privatversicherte/)
 - [Online Check-in in der Praxis: Entdecken Sie den neuen Service für Ihre Privatversicherten](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/online-check-in-in-der-arztpraxis/)
