@@ -33,7 +33,7 @@ Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS)
 # Für PVS-Hersteller
 Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind.→ [Zum PVS-Bereich](docs/pvs.md)
 
-# Wichtige Links
+# Weiterführende Informationen
 → [Linksammlung](docs/links.md)
 
 ## Kontakt & Support
