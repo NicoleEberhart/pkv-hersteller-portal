@@ -4,6 +4,7 @@
 - [PKV-Besonderheiten auf einen Blick](#pkv-besonderheiten-auf-einen-blick)
 - [Umsetzungsthemen für AVS](#umsetzungsthemen-für-avs)
 - [Spezifikationen & Dokumente](#spezifikationen--dokumente)
+- [Weiterführende Informationen](#weiterführende-informationen)
 - [Kontakt](#kontakt)
 
 Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen
@@ -35,7 +36,10 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [FHIR-Profile zum PKV Abgabe-und Abrechnungsinformationen](https://simplifier.net/erezept-patientenrechnung/)
 
 ### Weiterführende Informationen
-[Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md)
+- [Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md) 
+-	[Was Leistungsebringer zur ePA wissen müssen](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/was-leistunsgerbringer-zur-elektronischen-patientenakte-epa-wissen-muessen/)
+-	[Leistungserbringer ermöglichen mit dem E-Rezept mehr Komfort für Privatversicherte](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/leistungserbringer-schaffen-mit-dem-e-rezept-mehr-komfort-fuer-privatversicherte/)
+- [Online Check-in in der Praxis: Entdecken Sie den neuen Service für Ihre Privatversicherten](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/online-check-in-in-der-arztpraxis/)
 
 ## Kontakt
 Bei Rückfragen wenden Sie sich an: ehealth-ti@pkv.de
