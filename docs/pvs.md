@@ -48,10 +48,12 @@ ansonsten unverändert.
 - Um einen Testdatensatz zu erhalten, senden Sie eine Mail an ehealth-ti@pkv.de
 
 ## E-Rezept: Workflow 200
+Gegenwärtig bieten bereits mehr als 17 private Krankenversicherer ihren Versicherten die Nutzung des E-Rezepts an. 
 Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zur GKV und hat lediglich eine andere Workflow-Nummer. Der einzige fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
 [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 
-## Elektronische Patientenakte (ePA) in der PKV 
+## Elektronische Patientenakte
+### ePA in der PKV
 Gegenwärtig bieten bereits mehr als 10 private Krankenversicherer ihren Versicherten die Nutzung der ePA an. Weitere Anbieter sind gerade in der Umsetzung.
 Technisch wird dieselbe ePA wie in der GKV genutzt und die Prozesse sind weitgehend identisch. Der relevanteste Unterschied liegt darin, wie Zugriffsberechtigungen auf die ePA für Leistungserbringereinrichtungen zustande kommen. Dazu gibt es allgemein zwei Wege:
 
@@ -64,7 +66,7 @@ Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die
 ### Bezug zur „ePA für alle"
 Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher vor der Implementierung prüfen. Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
-### Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
+## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
 •	**Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
 •	**ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und Apotheke.
