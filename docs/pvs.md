@@ -59,7 +59,7 @@ Technisch wird dieselbe ePA wie in der GKV genutzt und die Prozesse sind weitgeh
 
   1. Initiierung eines Behandlungskontexts über Auslesen der eGK: Dieser Prozess (bisher mit VSDM++. zukünftig mit PoPP) wird bei gesetzlich Versicherten standardmäßig genutzt. Bei Privatversicherten ist er aufgrund fehlender eGK nicht möglich.
   2. Einstellung einer Berechtigung über die ePA-App: Dieser Prozess kann von allen Versicherten genutzt werden. In der GKV dient er vor allem der Anpassung der Berechtigungsdauer. Bei Privatversicherten ist dieses der Standardweg, um eine Berechtigung zu erteilen.
-  3. 
+     
 Von Seiten des PVS ist entsprechend sicherzustellen, dass Nutzer auf ePAs Privatversicherter zugreifen können, sofern die Versicherten bereits eine Zugriffsberechtigung für die Einrichtung erteilt haben. Zudem muss das System analog zu den Prozessen für gesetzlich Versicherte Feedback geben, wenn die Berechtigung nicht (mehr) besteht.
 Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die ebenfalls für den Zugriff notwendige KVNR sicher an das PVS übermitteln können.
 
@@ -70,7 +70,6 @@ Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jewei
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
 •	**Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
 •	**ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und Apotheke.
-
 
 ## Spezifikationen & Leitfäden
 - [PKV-IK-Liste](https://github.com/pkvjulian/PKV-IK-Liste)
