@@ -21,12 +21,11 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 
 ## Umsetzungsthemen für PVS
 - **Online Check-in (OCI):** PVS-Feature zur sicheren Übernahme der KVNR
-  (inkl. QR-Code/VZD, KIM-Infrastruktur, SM(C)-B, Konnektor/TI-Anbindung).
   Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - **E-Rezept ausstellen (WF200):** Verordnung im PVS erstellen und
   elektronisch signieren – Prozess analog zur GKV, inkl. Komfortsignatur.
   Siehe [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
-- **ePA-Zugriff über Freigabe per ePA-App:** Dokumente abrufen und über das
+- **ePA-Zugriff bei Privatversicherten:** Dokumente abrufen und über das
   PVS in die ePA einstellen.
   Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
@@ -34,7 +33,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 Der Online Check-in ist das PKV-Pendant zur elektronischen
 Ersatzbescheinigung (eEB) der GKV und dient der einmaligen, digitalen
 Übermittlung der Versichertenstammdaten – insbesondere der KVNR – an die
-Praxis, da PKV-Versicherte keine eGK mit aktualisierten Stammdaten vorlegen.
+Praxis, da PKV-Versicherte keine eGK vorlegen.
 Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
 KIM-Empfang plus automatischer FHIR-Datenübernahme.
 Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
@@ -52,38 +51,24 @@ ansonsten unverändert.
 Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zur GKV und hat lediglich eine andere Workflow-Nummer. Der einzige fachliche Unterschied: **160 = GKV**, **200 = PKV** (Direktzuweisung: **209**).
 [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 
-## Elektronische Patientenakte (ePA)
-Das PVS ruft Dokumente aus der ePA ab und stellt strukturierte Daten ein,
-sofern der Versicherte die Praxis dazu berechtigt hat. Funktional entspricht
-die Umsetzung der GKV – die PKV-Besonderheit liegt allein im Zugang
-(OCI statt eGK, Berechtigung per ePA-App).
+## Elektronische Patientenakte (ePA) in der PKV 
+Gegenwärtig bieten bereits mehr als 10 private Krankenversicherer ihren Versicherten die Nutzung der ePA an. Weitere Anbieter sind gerade in der Umsetzung.
+Technisch wird dieselbe ePA wie in der GKV genutzt und die Prozesse sind weitgehend identisch. Der relevanteste Unterschied liegt darin, wie Zugriffsberechtigungen auf die ePA für Leistungserbringereinrichtungen zustande kommen. Dazu gibt es allgemein zwei Wege:
 
-### Berechtigungsmodell
-Privatversicherte erteilen die Befugnis **aktiv über die ePA-App** ihrer Krankenversicherung; ein kartengebundener Zugriff (eGK) entfällt.
-- Die Befugnis ist in der Regel **zeitlich begrenzt** und kann vom Versicherten jederzeit widerrufen werden.
-- Das PVS muss damit umgehen, dass ein Zugriff **nicht oder nicht mehr** besteht (fehlende/abgelaufene Berechtigung sauber abfangen).
+  1. Initiierung eines Behandlungskontexts über Auslesen der eGK: Dieser Prozess (bisher mit VSDM++. zukünftig mit PoPP) wird bei gesetzlich Versicherten standardmäßig genutzt. Bei Privatversicherten ist er aufgrund fehlender eGK nicht möglich.
+  2. Einstellung einer Berechtigung über die ePA-App: Dieser Prozess kann von allen Versicherten genutzt werden. In der GKV dient er vor allem der Anpassung der Berechtigungsdauer. Bei Privatversicherten ist dieses der Standardweg, um eine Berechtigung zu erteilen.
+  3. 
+Von Seiten des PVS ist entsprechend sicherzustellen, dass Nutzer auf ePAs Privatversicherter zugreifen können, sofern die Versicherten bereits eine Zugriffsberechtigung für die Einrichtung erteilt haben. Zudem muss das System analog zu den Prozessen für gesetzlich Versicherte Feedback geben, wenn die Berechtigung nicht (mehr) besteht.
+Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die ebenfalls für den Zugriff notwendige KVNR sicher an das PVS übermitteln können.
 
-### Zugriffswege
-- **Lesen:** Abruf vorhandener Dokumente und strukturierter Daten aus dem ePA-Aktenkonto.
-- **Schreiben:** Einstellen von Dokumenten und strukturierten Daten.
+### Bezug zur „ePA für alle"
+Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher vor der Implementierung prüfen. Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
-### Bezug zur „ePA für alle" 
-Die Umsetzung erfolgt im Rahmen der **„ePA für alle"**. Maßgeblich ist die
-jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher
-vor der Implementierung prüfen.
-Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
+### Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
+Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
+•	**Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
+•	**ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und Apotheke.
 
-
-## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
-Einige PKV-Besonderheiten betreffen primär den Fachdienst, das
-Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
-- **Einwilligung zur Abrechnungsinformation:** Für FlowTypes 200/209 wird der
-  abgebenden Apotheke im Task übermittelt, ob der Versicherte eine
-  Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese
-  Einwilligung erteilt der Versicherte im FdV.
-- **ChargeItem / PKV-Abgabedatensatz:** Die Verwaltung der
-  Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt
-  bei FdV und Apotheke.
 
 ## Spezifikationen & Leitfäden
 - [PKV-IK-Liste](https://github.com/pkvjulian/PKV-IK-Liste)
@@ -91,6 +76,11 @@ Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 - [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
+
+## Weiterführende Informationen 
+-	[Was Leistungsebringer zur ePA wissen müssen](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/was-leistunsgerbringer-zur-elektronischen-patientenakte-epa-wissen-muessen/)
+-	[Leistungserbringer ermöglichen mit dem E-Rezept mehr Komfort für Privatversicherte](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/leistungserbringer-schaffen-mit-dem-e-rezept-mehr-komfort-fuer-privatversicherte/)
+- [Online Check-in in der Praxis: Entdecken Sie den neuen Service für Ihre Privatversicherten](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/online-check-in-in-der-arztpraxis/)
 
 
 ## Kontakt
