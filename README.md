@@ -24,7 +24,7 @@ Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller
 # PKV-Besonderheiten auf einen Blick
 - Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)**. 
 - Für E-Rezept und ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** ins PVS übermittelt.
-- Der **OCI** überträgt nur die KVNR – die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
+- Der **OCI** überträgt die KVNR und weitere Stammdaten– die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
 - Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische Privatrezept bleibt jederzeit möglich.
 
 # Für AVS-Hersteller
