@@ -34,5 +34,8 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [FHIR-Profile zum E-Abgabedatensatz](https://simplifier.net/erezeptabgabedaten)
 - [FHIR-Profile zum PKV Abgabe-und Abrechnungsinformationen](https://simplifier.net/erezept-patientenrechnung/)
 
+### Weiterführende Informationen
+[Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md)
+
 ## Kontakt
 Bei Rückfragen wenden Sie sich an: ehealth-ti@pkv.de
