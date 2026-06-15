@@ -7,15 +7,15 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 ## Inhaltsverzeichnis
 - [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
 - [Online Check-in](#online-check-in)
-  - [Sonderfall](#sonderfall-kein-online-check-in-vorhanden)
+  - [Sonderfall: Kein Online Check-in vorhanden](#sonderfall-kein-online-check-in-vorhanden)
   - [Testen](#testen)
-- [E-Rezept: Workflow 200](#e-rezept-workflow-200) 
-- [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
-  - [Berechtigungsmodell](#berechtigungsmodell)
-  - [Zugriffswege](#zugriffswege)
+- [E-Rezept: Workflow 200](#e-rezept-workflow-200)
+- [Elektronische Patientenakte](#elektronische-patientenakte)
+  - [ePA in der PKV](#epa-in-der-pkv)
   - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
 - [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
+- [Weiterführende Informationen](#weiterführende-informationen)
 - [Kontakt](#kontakt)
 
 ## Umsetzungsthemen für PVS
@@ -81,7 +81,6 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 -	[Was Leistungsebringer zur ePA wissen müssen](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/was-leistunsgerbringer-zur-elektronischen-patientenakte-epa-wissen-muessen/)
 -	[Leistungserbringer ermöglichen mit dem E-Rezept mehr Komfort für Privatversicherte](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/leistungserbringer-schaffen-mit-dem-e-rezept-mehr-komfort-fuer-privatversicherte/)
 - [Online Check-in in der Praxis: Entdecken Sie den neuen Service für Ihre Privatversicherten](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/online-check-in-in-der-arztpraxis/)
-
 
 ## Kontakt
 Bei Rückfragen zur PVS-Anbindung: ehealth-ti@pkv.de
