@@ -1,7 +1,7 @@
-# Hersteller-Portal Apothekenverwaltungssysteme & Arztinformationssysteme
-Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Hersteller im Umfeld Telematikinfrastruktur (TI). Bündelt technische Spezifikationen, Schnittstellen, Anbindungswege und Kontaktinformationen für die Umsetzung digitaler Anwendungen für Privatversicherte.
+# Hersteller-Portal: Informationen für Apothekenverwaltungssysteme & Arztinformationssysteme zu PKV-Anwendungen
+Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Hersteller im Umfeld der Telematikinfrastruktur (TI). Die Seiten bündeln technische Spezifikationen und Informationen sowie Kontaktinformationen für die Umsetzung digitaler Anwendungen für Privatversicherte.
 
-> Stand: 08.06.2026 ·  Kontakt: ehealth-ti@pkv.de
+> Stand: 03.11.2026 ·  Kontakt: ehealth-ti@pkv.de
 
 ---
 
@@ -15,7 +15,7 @@ Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Herstel
 ---
 
 # Über dieses Portal
-Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller von Apotheken- und Praxisverwaltungssystemen. Ziel ist ein schneller, transparenter Zugang zu Spezifikationen, Schnittstellen und Ansprechpartnern.
+Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller von Apotheken- und Arztinformationssystemen. Ziel ist ein schneller, transparenter Zugang zu Spezifikationen, Schnittstellen und Ansprechpartnern.
 
 
 > Hinweis: Die hier bereitgestellten Inhalte dienen der technischen Information. Verbindliche Vorgaben ergeben sich aus den jeweils gültigen Spezifikationen und gesetzlichen Grundlagen.
@@ -23,7 +23,7 @@ Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller
 
 # PKV-Besonderheiten auf einen Blick
 - Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)**. 
-- Für E-Rezept und ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** ins AIS übermittelt.
+- Für das Ausstellen eines E-Rezepts sowie für den ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** via KIM ins AIS übermittelt.
 - Der **OCI** überträgt die KVNR und weitere Stammdaten– die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
 - Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische Privatrezept bleibt jederzeit möglich.
 
