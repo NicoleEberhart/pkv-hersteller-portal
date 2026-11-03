@@ -1,11 +1,11 @@
-# Für PVS-Hersteller
+# Für AIS-Hersteller
 
-Dieser Bereich richtet sich an Hersteller von Praxisverwaltungssystemen (PVS)
+Dieser Bereich richtet sich an Hersteller von Arztinformationssystemen (AIS) 
 und bündelt die Informationen, die für die Anbindung und Umsetzung von
 TI-Anwendungen für **Privatversicherte** relevant sind.
 
 ## Inhaltsverzeichnis
-- [Umsetzungsthemen für PVS](#umsetzungsthemen-für-pvs)
+- [Umsetzungsthemen für AIS](#umsetzungsthemen-für-ais)
 - [Online Check-in](#online-check-in)
   - [Sonderfall: Kein Online Check-in vorhanden](#sonderfall-kein-online-check-in-vorhanden)
   - [Testen](#testen)
@@ -13,19 +13,19 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [Elektronische Patientenakte](#elektronische-patientenakte)
   - [ePA in der PKV](#epa-in-der-pkv)
   - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
-- [Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-pvs-scopes)
+- [Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-ais-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
 - [Weiterführende Informationen](#weiterführende-informationen)
 - [Kontakt](#kontakt)
 
-## Umsetzungsthemen für PVS
-- **Online Check-in (OCI):** PVS-Feature zur sicheren Übernahme der KVNR
+## Umsetzungsthemen für AIS
+- **Online Check-in (OCI):** Anwendung zur sicheren Übernahme der KVNR
   Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
-- **E-Rezept ausstellen (WF200):** Verordnung im PVS erstellen und
+- **E-Rezept ausstellen (WF200):** Verordnung im AIS erstellen und
   elektronisch signieren – Prozess analog zur GKV, inkl. Komfortsignatur.
   Siehe [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 - **ePA-Zugriff bei Privatversicherten:** Dokumente abrufen und über das
-  PVS in die ePA einstellen.
+  AIS in die ePA einstellen.
   Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
 ## Online Check-in
@@ -33,7 +33,7 @@ Der Online Check-in ist das PKV-Pendant zur elektronischen
 Ersatzbescheinigung (eEB) der GKV und dient der einmaligen, digitalen
 Übermittlung der Versichertenstammdaten – insbesondere der KVNR – an die
 Praxis, da PKV-Versicherte keine eGK vorlegen.
-Für PVS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
+Für AIS-Hersteller besteht die Implementierung im Kern aus zwei Bausteinen:
 KIM-Empfang plus automatischer FHIR-Datenübernahme.
 Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 
@@ -59,14 +59,14 @@ Technisch wird dieselbe ePA wie in der GKV genutzt und die Prozesse sind weitgeh
   1. Initiierung eines Behandlungskontexts über Auslesen der eGK: Dieser Prozess (bisher mit VSDM++. zukünftig mit PoPP) wird bei gesetzlich Versicherten standardmäßig genutzt. Bei Privatversicherten ist er aufgrund fehlender eGK nicht möglich.
   2. Einstellung einer Berechtigung über die ePA-App: Dieser Prozess kann von allen Versicherten genutzt werden. In der GKV dient er vor allem der Anpassung der Berechtigungsdauer. Bei Privatversicherten ist dieses der Standardweg, um eine Berechtigung zu erteilen.
      
-Von Seiten des PVS ist entsprechend sicherzustellen, dass Nutzer auf ePAs Privatversicherter zugreifen können, sofern die Versicherten bereits eine Zugriffsberechtigung für die Einrichtung erteilt haben. Zudem muss das System analog zu den Prozessen für gesetzlich Versicherte Feedback geben, wenn die Berechtigung nicht (mehr) besteht.
-Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die ebenfalls für den Zugriff notwendige KVNR sicher an das PVS übermitteln können.
+Von Seiten des AIS ist entsprechend sicherzustellen, dass Nutzer auf ePAs Privatversicherter zugreifen können, sofern die Versicherten bereits eine Zugriffsberechtigung für die Einrichtung erteilt haben. Zudem muss das System analog zu den Prozessen für gesetzlich Versicherte Feedback geben, wenn die Berechtigung nicht (mehr) besteht.
+Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die ebenfalls für den Zugriff notwendige KVNR sicher an das AIS übermitteln können.
 
 ### Bezug zur „ePA für alle"
 Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher vor der Implementierung prüfen. Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 
-## Abgrenzung: PKV-spezifische Themen außerhalb des PVS-Scopes
-Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das PVS:
+## Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes
+Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das AIS:
 •	**Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
 •	**ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und Apotheke.
 
@@ -84,4 +84,4 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [Online Check-in in der Praxis: Entdecken Sie den neuen Service für Ihre Privatversicherten](https://www.pkv.de/wissen/versorgung/digitale-medizin/informationen-fuer-aerzte/online-check-in-in-der-arztpraxis/)
 
 ## Kontakt
-Bei Rückfragen zur PVS-Anbindung: ehealth-ti@pkv.de
+Bei Rückfragen zur AIS-Anbindung: ehealth-ti@pkv.de
