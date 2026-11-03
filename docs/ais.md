@@ -27,6 +27,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - **ePA-Zugriff bei Privatversicherten:** Dokumente abrufen und über das
   AIS in die ePA einstellen.
   Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
+- **Digitale Patientenrechnung (DiPag):** Rechnungen im PVS erstellen und über den DiPag Fachdienst an Versicherte digital übermitteln. 
 
 ## Online Check-in
 Der Online Check-in ist das PKV-Pendant zur elektronischen
@@ -53,17 +54,32 @@ Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zur
 
 ## Elektronische Patientenakte
 ### ePA in der PKV
-Gegenwärtig bieten bereits mehr als 10 private Krankenversicherer ihren Versicherten die Nutzung der ePA an. Weitere Anbieter sind gerade in der Umsetzung.
+Die meisten Privatversicherten können die ePA bereits nutzen.
 Technisch wird dieselbe ePA wie in der GKV genutzt und die Prozesse sind weitgehend identisch. Der relevanteste Unterschied liegt darin, wie Zugriffsberechtigungen auf die ePA für Leistungserbringereinrichtungen zustande kommen. Dazu gibt es allgemein zwei Wege:
 
-  1. Initiierung eines Behandlungskontexts über Auslesen der eGK: Dieser Prozess (bisher mit VSDM++. zukünftig mit PoPP) wird bei gesetzlich Versicherten standardmäßig genutzt. Bei Privatversicherten ist er aufgrund fehlender eGK nicht möglich.
-  2. Einstellung einer Berechtigung über die ePA-App: Dieser Prozess kann von allen Versicherten genutzt werden. In der GKV dient er vor allem der Anpassung der Berechtigungsdauer. Bei Privatversicherten ist dieses der Standardweg, um eine Berechtigung zu erteilen.
+  1. **Initiierung eines Behandlungskontexts über Auslesen der eGK:** Dieser Prozess (bisher mit VSDM++. zukünftig mit PoPP) wird bei gesetzlich Versicherten standardmäßig genutzt. Bei Privatversicherten ist er aufgrund fehlender eGK nicht möglich.
+  2. **Einstellung einer Berechtigung über die ePA-App:** Dieser Prozess kann von allen Versicherten genutzt werden. In der GKV dient er vor allem der Anpassung der Berechtigungsdauer. Bei Privatversicherten ist dieses der Standardweg, um eine Berechtigung zu erteilen.
      
 Von Seiten des AIS ist entsprechend sicherzustellen, dass Nutzer auf ePAs Privatversicherter zugreifen können, sofern die Versicherten bereits eine Zugriffsberechtigung für die Einrichtung erteilt haben. Zudem muss das System analog zu den Prozessen für gesetzlich Versicherte Feedback geben, wenn die Berechtigung nicht (mehr) besteht.
 Die Umsetzung des Online Check-ins ist ebenfalls relevant, damit Versicherte die ebenfalls für den Zugriff notwendige KVNR sicher an das AIS übermitteln können.
 
 ### Bezug zur „ePA für alle"
 Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jeweils gültige **Spezifikationsversion**; Versionsstände und Fristen daher vor der Implementierung prüfen. Siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
+
+## Digitale Patientenrechnung (DiPag)
+
+Die DiPag ist die erste Anwendung der TI 2.0 und zielt darauf ab, den gesamten Abrechnungsprozess zwischen Rechnungsersteller, Versicherten und Privater Krankenversicherung medienbruchfrei zu digitalisieren. 
+
+Der DiPag-Fachdienst ist direkt über das Internet erreichbar und nach dem Zero-Trust-Ansatz abgesichert. Für AIS-Hersteller bedeutet das, dass neben der Anbindung an den DiPag-Fachdienst zusätzlich ein ZETA-Client integriert werden muss, siehe: [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung] (https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
+
+Auf Seiten der Versicherten ist die DiPag entweder unmittelbar in das ePA-FdV oder in die Service-App der jeweiligen Versicherung mit Einreichungsfunktion integriert. Rechnungen können nur dann an den DiPag-Fachdienst übermittelt werden, wenn der Rechnungsempfänger über ein DiPag-Nutzerkonto verfügt und eine Einwilligung zum digitalen Rechnungsversand vorliegt. Für eine Abfrage des Rechnungsempfängers und seiner Einwilligung am Fachdienst sind die KVNR und das Geburtsdatum erforderlich. 
+
+Die Einwilligung erteilt der Rechnungsempfänger einmalig bei Einrichtung des Nutzerkontos. Eine patientenindividuelle Zustimmung müssen Rechnungsersteller daher nicht gesondert einholen.
+
+Sobald eine Rechnung auf dem DiPag-Fachdienst für den Rechnungsempfänger bereitsteht, wird dieser per E-Mail und – sofern aktiviert – per Push-Nachricht benachrichtigt. Anschließend kann der Rechnungsempfänger die Rechnung als PDF/A-3 mit eingebetteten strukturierten Daten und/oder ein Zugriffstoken herunterladen und beim gewünschten Kostenträger zur Kostenerstattung einreichen. 
+
+Da Leistungserbringer Privatrechnungen häufig nicht selbst stellen, sondern an externe Abrechnungsdienstleister abgeben, sollten bei der Übertragung der Patienten- und Abrechnungsdaten an den Abrechnungsdienstleister zwingend auch die KVNR und das Geburtsdatum des Rechnungsempfängers übermittelt werden. 
+
 
 ## Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das AIS:
@@ -76,6 +92,13 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 - [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
+- **DiPag**
+  - [DiPag-Featuredokument] (https://gemspec.gematik.de/docs/gemF/gemF_DiPag/latest/)
+  - [DiPag-Fachdienst-Spezifikations] (https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
+  - [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung] (https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
+  - [DiPag FHIR-Profile inkl. FHIR-Implementierungsleiten] (https://simplifier.net/DigitalePatientenrechnung/~introduction) 
+  - [ZETA Spezifikation] (https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/)
+  - [ZETA Hauptrepository] (https://github.com/gematik/zeta)
 
 ## Weiterführende Informationen 
 - [Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md) 
