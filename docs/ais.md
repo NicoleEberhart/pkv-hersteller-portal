@@ -70,7 +70,7 @@ Die Umsetzung erfolgt im Rahmen der „ePA für alle". Maßgeblich ist die jewei
 
 Die DiPag ist die erste Anwendung der TI 2.0 und zielt darauf ab, den gesamten Abrechnungsprozess zwischen Rechnungsersteller, Versicherten und Privater Krankenversicherung medienbruchfrei zu digitalisieren. 
 
-Der DiPag-Fachdienst ist direkt über das Internet erreichbar und nach dem Zero-Trust-Ansatz abgesichert. Für AIS-Hersteller bedeutet das, dass neben der Anbindung an den DiPag-Fachdienst zusätzlich ein ZETA-Client integriert werden muss, siehe: [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung] (https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
+Der DiPag-Fachdienst ist direkt über das Internet erreichbar und nach dem Zero-Trust-Ansatz abgesichert. Für AIS-Hersteller bedeutet das, dass neben der Anbindung an den DiPag-Fachdienst zusätzlich ein ZETA-Client integriert werden muss, siehe: [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
 
 Auf Seiten der Versicherten ist die DiPag entweder unmittelbar in das ePA-FdV oder in die Service-App der jeweiligen Versicherung mit Einreichungsfunktion integriert. Rechnungen können nur dann an den DiPag-Fachdienst übermittelt werden, wenn der Rechnungsempfänger über ein DiPag-Nutzerkonto verfügt und eine Einwilligung zum digitalen Rechnungsversand vorliegt. Für eine Abfrage des Rechnungsempfängers und seiner Einwilligung am Fachdienst sind die KVNR und das Geburtsdatum erforderlich. 
 
@@ -93,12 +93,12 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
 - **DiPag**
-  - [DiPag-Featuredokument] (https://gemspec.gematik.de/docs/gemF/gemF_DiPag/latest/)
-  - [DiPag-Fachdienst-Spezifikations] (https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
-  - [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung] (https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
-  - [DiPag FHIR-Profile inkl. FHIR-Implementierungsleiten] (https://simplifier.net/DigitalePatientenrechnung/~introduction) 
-  - [ZETA Spezifikation] (https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/)
-  - [ZETA Hauptrepository] (https://github.com/gematik/zeta)
+  - [DiPag-Featuredokument](https://gemspec.gematik.de/docs/gemF/gemF_DiPag/latest/)
+  - [DiPag-Fachdienst-Spezifikations](https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
+  - [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
+  - [DiPag FHIR-Profile inkl. FHIR-Implementierungsleiten](https://simplifier.net/DigitalePatientenrechnung/~introduction) 
+  - [ZETA Spezifikation](https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/)
+  - [ZETA Hauptrepository](https://github.com/gematik/zeta)
 
 ## Weiterführende Informationen 
 - [Linksammlung](https://github.com/NicoleEberhart/pkv-hersteller-portal/blob/main/docs/links.md) 
