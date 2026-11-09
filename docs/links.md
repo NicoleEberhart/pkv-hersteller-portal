@@ -1,6 +1,6 @@
 # Wichtige Links
 
-Gesammelte Linksammlung für AVS- und PVS-Hersteller im Umfeld der
+Gesammelte Linksammlung für AVS- und AIS-Hersteller im Umfeld der
 Telematikinfrastruktur (TI) und der Anwendungen für Privatversicherte.
 
 ## Inhaltsverzeichnis
