@@ -13,7 +13,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - [Elektronische Patientenakte](#elektronische-patientenakte)
   - [ePA in der PKV](#epa-in-der-pkv)
   - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
-- [Digitale Patientenrechnung (DiPag)](#digitale-patientenrechnung-(DiPag))  
+- [Digitale Patientenrechnung (DiPag)](#digitale-patientenrechnung-(dipag))  
 - [Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-ais-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
 - [Weiterführende Informationen](#weiterführende-informationen)
