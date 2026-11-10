@@ -21,12 +21,6 @@ Dieses Portal wird vom PKV-Verband bereitgestellt und richtet sich an Hersteller
 > Hinweis: Die hier bereitgestellten Inhalte dienen der technischen Information. Verbindliche Vorgaben ergeben sich aus den jeweils gültigen Spezifikationen und gesetzlichen Grundlagen.
 
 
-# PKV-Besonderheiten auf einen Blick
-- Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)**. 
-- Für das Ausstellen eines E-Rezepts sowie für den ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** via KIM ins AIS übermittelt.
-- Der **OCI** überträgt die KVNR und weitere Stammdaten– die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
-- Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische Privatrezept bleibt jederzeit möglich.
-
 # Für AVS-Hersteller
 Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS) und bündelt die Informationen, die für die Anbindung und Umsetzung von TI-Anwendungen für **Privatversicherte** relevant sind. → [Zum AVS-Bereich](docs/avs.md)
 
