@@ -7,26 +7,20 @@
 - [Weiterführende Informationen](#weiterführende-informationen)
 - [Kontakt](#kontakt)
 
-Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen
-(AVS) und bündelt die Informationen, die für die Anbindung und Umsetzung von
-TI-Anwendungen für **Privatversicherte** relevant sind.
+Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS) und bündelt die Informationen, die für die PKV-TI-Anwendungen relevant sind.
 
 ## PKV-Besonderheiten auf einen Blick
-- Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)** –
-  TI-Anwendungen werden über ePA- und E-Rezept-App genutzt.
-- Für den ePA-Zugriff wird die **KVNR** benötigt; zusätzlich berechtigt der
-  Versicherte die Apotheke **aktiv per ePA-App**.
-- Für Privatversicherte ist das E-Rezept **freiwillig**; das klassische
-  Privatrezept bleibt jederzeit möglich.
- - Nach der Bezahlung erhalten Privatversicherte von der Apotheke eine digitale Apothekenrechnung (=Kostenbeleg) , Beispiel: https://github.com/DAV-ABDA/eRezept-Beispiele/blob/main/PKV/PZN_Mehrfachverordnung/PZN_MV_1/PZN_MV1_Kostenbeleg.pdf
+- Online Check In 2.0 identisch zu GKV
+- Nach der Bezahlung erhalten Privatversicherte von der Apotheke eine digitale Apothekenrechnung (=Kostenbeleg) , Beispiel: https://github.com/DAV-ABDA/eRezept-Beispiele/blob/main/PKV/PZN_Mehrfachverordnung/PZN_MV_1/PZN_MV1_Kostenbeleg.pdf, sofern sie diesem in der E-Rezept-App zugestimmt haben.
 
-## Umsetzungsthemen für AVS
-- **ePA-Zugriff in der Apotheke:** Zugriff über Rezeptabruf oder Befugnis
-  eines Stammkunden per ePA-App.
-- **Annahme PKV-E-Rezept (WF200):** Umsetzung gemäß Implementierungsleitfaden
-  Primärsysteme.
-- **Apothekenrechnung (ehemals Kostenbeleg):** Abrechnung Privatversicherter
-  gemäß TA DAV PKV. https://www.abda.de/themen/e-health/datenaustausch-pkv/
+## Umsetzungsthemen für AVS-Hersteller
+- [**Online Check-In 2.0** (PoPP)](#online-check-in-2.0): Herstellung eines Behandlungskontextes und damit Zugriff auf E-Rezepte und die ePA inkl. Medikationsliste
+- [**Annahme PKV-E-Rezept (WF200)](e-rezept) Umsetzung gemäß Implementierungsleitfaden Primärsysteme.
+- [**Digitale Apothekenrechnung (ehemals Kostenbeleg)](digitale-apothekenrechnung): Abrechnung Privatversicherter   gemäß TA DAV PKV. https://www.abda.de/themen/e-health/datenaustausch-pkv/
+
+# Online-Check-In 2.0 
+# E-Rezept 
+# Digitale Apothekenrechnung
 
 ## Spezifikationen & Dokumente
 - [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
