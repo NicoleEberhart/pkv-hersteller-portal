@@ -34,11 +34,11 @@ Siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.co
 ### Sonderfall: Kein Online Check-in vorhanden
 Liegt keine OCI-Nachricht vor (z. B. Patient nutzt die App nicht), muss die KVNR auf anderem Weg erfasst werden. Der E-Rezept-Prozess (WF200) bleibt ansonsten unverändert.
 
-### Weiterentwicklung Online Check-in 2.0 
-
-### Testen
+#### Testen
 - [Beispiel-Testdatensätze](https://github.com/pkvjulian/oci_pkv_testdaten)
 - Um einen Testdatensatz in der RU auf Ihre KIM-Adresse zu erhalten, senden Sie eine Mail an *ehealth-ti@pkv.de*
+
+### Weiterentwicklung Online Check-in 2.0 
 
 ## E-Rezept: Workflow 200
 Die meisten Privaten Krankenversicherungen bieten bereits das E-Rezept an. Der Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zum GKV-Prozess (WF 160).  Beide Workflows nutzen dasselbe FHIR-Datenmodell. Die wesentlichen Unterschiede liegen in den nachgelagerten PKV-spezifischen Prozessen (Abrechnungsprozess und Zustimmung zum Erhalt einer digitalen Apothekenrechnung), die lediglich die Apothekensoftware betreffen. 
@@ -80,8 +80,8 @@ Da Leistungserbringer Privatrechnungen häufig nicht selbst stellen, sondern an 
 
 ## Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes
 Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Frontend (FdV) und das Apothekenverwaltungssystem, nicht das AIS:
-•	**Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
-•	**ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und der Apotheke.
+- **Einwilligung zur Abrechnungsinformation**: Für FlowTypes 200/209 wird der abgebenden Apotheke im Task übermittelt, ob der Versicherte eine Einwilligung zum Speichern von Abrechnungsinformationen erteilt hat – diese Einwilligung erteilt der Versicherte im FdV.
+- **ChargeItem / PKV-Abgabedatensatz**: Die Verwaltung der Abrechnungsinformationen (ChargeItem mit AccessCode, 2D-Code-Token) liegt bei FdV und der Apotheke.
 
 ## Spezifikationen & Leitfäden
 - [PKV-IK-Liste](https://github.com/pkvjulian/PKV-IK-Liste)
@@ -89,7 +89,7 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
 - [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
-- **DiPag**
+- DiPag
   - [DiPag-Featuredokument](https://gemspec.gematik.de/docs/gemF/gemF_DiPag/latest/)
   - [DiPag-Fachdienst-Spezifikation](https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
   - [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
