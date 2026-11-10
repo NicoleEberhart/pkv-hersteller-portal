@@ -12,7 +12,9 @@ Dieser Bereich richtet sich an Hersteller von Apothekenverwaltungssystemen (AVS)
 - [Kontakt](#kontakt)
 
 ## PKV-Besonderheiten auf einen Blick
-- Online Check In 2.0 identisch zu GKV
+- Privatversicherte haben **keine elektronische Gesundheitskarte (eGK)**. 
+- Für das Ausstellen eines E-Rezepts sowie für den ePA-Zugriff wird die **Krankenversichertennummer (KVNR)**  benötigt; sie wird per **Online Check-in (OCI)** via KIM ins AIS übermittelt.
+- Der **OCI** überträgt die KVNR und weitere Stammdaten– die **ePA-Berechtigung** erteilen Versicherte zusätzlich aktiv per ePA-App.
 - Nach der Bezahlung erhalten Privatversicherte von der Apotheke eine digitale Apothekenrechnung (=Kostenbeleg) , Beispiel: https://github.com/DAV-ABDA/eRezept-Beispiele/blob/main/PKV/PZN_Mehrfachverordnung/PZN_MV_1/PZN_MV1_Kostenbeleg.pdf, sofern sie diesem in der E-Rezept-App zugestimmt haben.
 
 ## Umsetzungsthemen für AVS-Hersteller
