@@ -9,10 +9,10 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
   - [Sonderfall: Kein Online Check-in vorhanden](#sonderfall-kein-online-check-in-vorhanden)
   - [Testen](#testen)
 - [E-Rezept: Workflow 200](#e-rezept-workflow-200)
-- [Elektronische Patientenakte](#elektronische-patientenakte-epa)
+- [Elektronische Patientenakte (ePA)](#elektronische-patientenakte-epa)
   - [ePA in der PKV](#epa-in-der-pkv)
   - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
-- [Digitale Patientenrechnung (DiPag)](#digitale-patientenrechnung-(dipag))
+- [Digitale Patientenrechnung (DiPag)](#digitale-patientenrechnung-dipag)
 - [Abgrenzung: PKV-spezifische Themen außerhalb des AIS-Scopes](#abgrenzung-pkv-spezifische-themen-außerhalb-des-ais-scopes)
 - [Spezifikationen & Leitfäden](#spezifikationen--leitfäden)
 - [Weiterführende Informationen](#weiterführende-informationen)
@@ -22,9 +22,9 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
 - **Online Check-in (OCI):** Anwendung zur sicheren Übermittlung der Krankenversichertennummer (KVNR) in das AIS, siehe [Implementierungsleitfaden Primärsysteme OCI (gematik)](https://github.com/gematik/spec-VSDM-Ersatzbescheinigung/blob/master/guides/eEB-OCI/Einfuehrung/Index.page.md)
 - **PKV-E-Rezept ausstellen (WF200):** Verordnung im AIS erstellen und elektronisch signieren – Prozess analog zur GKV, inkl. Komfortsignatur, siehe 
   Siehe [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
-- **ePA-Zugriff bei Privatversicherten:** Der Versicherte erteilt eine ePA-Freigabe über die ePA-App. Der Leistungserbringer kann dann Dokumente abrufen und über das AIS in die ePA einstellen. Analog zur GKV, siehe[Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
-- **Digitale Patientenrechnung (DiPag):** Rechnungen mit strukturiten Daten sicher an den DiPag-Fachdienst übermitteln, siehe [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
-- **•	PADneXt-Schnittstelle:** Übertragung der KVNR an Abrechnungsdienstleister, damit auch sie die DiPag nutzen können, siehe [PADneXt für GOÄneu - Abrechner - PADline](https://padline.de/padnext-fuer-goaeneu-abrechner/)
+- **ePA-Zugriff bei Privatversicherten:** Der Versicherte erteilt eine ePA-Freigabe über die ePA-App. Der Leistungserbringer kann dann Dokumente abrufen und über das AIS in die ePA einstellen. Analog zur GKV, siehe [Implementierungsleitfaden Primärsysteme ePA (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_ePA/latest/)
+- **Digitale Patientenrechnung (DiPag):** Rechnungen mit strukturierten Daten sicher an den DiPag-Fachdienst übermitteln, siehe [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
+- **PADneXt-Schnittstelle:** Übertragung der KVNR an Abrechnungsdienstleister, damit auch sie die DiPag nutzen können, siehe [PADneXt für GOÄneu - Abrechner - PADline](https://padline.de/padnext-fuer-goaeneu-abrechner/)
 
 ## Online Check-in
 Der Online Check-in ist das PKV-Pendant zur elektronischen Ersatzbescheinigung (eEB) der GKV und dient der **einmaligen, digitalen Übermittlung der Versichertenstammdaten** – insbesondere der KVNR. 
@@ -86,9 +86,9 @@ Einige PKV-Besonderheiten betreffen primär den Fachdienst, das Versicherten-Fro
 - [FHIR-Profile VSDM-Ersatzbescheinigung (Simplifier)](https://simplifier.net/VSDM-Ersatzbescheinigung/~introduction)
 - **DiPag**
   - [DiPag-Featuredokument](https://gemspec.gematik.de/docs/gemF/gemF_DiPag/latest/)
-  - [DiPag-Fachdienst-Spezifikations](https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
+  - [DiPag-Fachdienst-Spezifikation](https://gemspec.gematik.de/docs/gemSpec/gemSpec_DiPag_FD/latest/)
   - [Implementierungsleitfaden für Clients der Digitalen Patientenrechnung](https://wiki.gematik.de/spaces/RUAAS/pages/800562254/Implementierungsleitfaden+f%C3%BCr+Clients+der+Digitalen+Patientenrechnung)
-  - [DiPag FHIR-Profile inkl. FHIR-Implementierungsleiten](https://simplifier.net/DigitalePatientenrechnung/~introduction) 
+  - [DiPag FHIR-Profile inkl. FHIR-Implementierungsleitfaden](https://simplifier.net/DigitalePatientenrechnung/~introduction) 
   - [ZETA Spezifikation](https://gemspec.gematik.de/docs/gemSpec/gemSpec_ZETA/latest/)
   - [ZETA Hauptrepository](https://github.com/gematik/zeta)
 
