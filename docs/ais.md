@@ -41,7 +41,12 @@ Liegt keine OCI-Nachricht vor (z. B. Patient nutzt die App nicht), muss die KVNR
 - Um einen Testdatensatz in der RU auf Ihre KIM-Adresse zu erhalten, senden Sie eine Mail an *ehealth-ti@pkv.de*
 
 ## E-Rezept: Workflow 200
-Die meisten Privaten Krankenversicherungen bieten bereits das E-Rezept an. Der Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zur GKV und hat lediglich eine andere Workflow-Nummer. Die Profile sowie Status des WF 200 sowie des WF 160 sind identisch. Es unterscheidet sich lediglich der "coverage type". 
+Die meisten Privaten Krankenversicherungen bieten bereits das E-Rezept an. Der Workflow **200** ist **kein neuer Prozess**: Der Prozess funktioniert analog zum GKV-Prozess (WF 160).  Beide Workflows nutzen dasselbe FHIR-Datenmodell. Die wesentlichen Unterschiede liegen in den nachgelagerten PKV-spezifischen Prozessen (Abrechnungsprozess und Zustimmung zum Erhalt einer digitalen Apothekenrechnung), die lediglich die Apothekensoftware betreffen. 
+
+- Beide Workflows nutzen dasselbe Statusmodell
+- Es werden für die Verordnungsdaten die E-Rezept-Profile der KBV verwendet
+- Die FHIR-Datenmodelle sind identisch
+  
 Mehr Infos: [Implementierungsleitfaden Primärsysteme E-Rezept (gematik)](https://gemspec.gematik.de/docs/gemILF/gemILF_PS_eRp/latest/)
 
 ## Elektronische Patientenakte (ePA)
