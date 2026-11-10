@@ -9,7 +9,7 @@ TI-Anwendungen für **Privatversicherte** relevant sind.
   - [Sonderfall: Kein Online Check-in vorhanden](#sonderfall-kein-online-check-in-vorhanden)
   - [Testen](#testen)
 - [E-Rezept: Workflow 200](#e-rezept-workflow-200)
-- [Elektronische Patientenakte](#elektronische-patientenakte)
+- [Elektronische Patientenakte](#elektronische-patientenakte-epa)
   - [ePA in der PKV](#epa-in-der-pkv)
   - [Bezug zur „ePA für alle"](#bezug-zur-epa-für-alle)
 - [Digitale Patientenrechnung (DiPag)](#digitale-patientenrechnung-(dipag))
