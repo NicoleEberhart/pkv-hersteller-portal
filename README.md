@@ -9,7 +9,7 @@ Zentrale Informations- und Dokumentationsplattform des PKV-Verbands für Herstel
 - [Über dieses Portal](#über-dieses-portal)
 - [Für AVS-Hersteller](#für-avs-hersteller)
 - [Für AIS-Hersteller](#für-ais-hersteller)
-- [Wichtige Links](#wichtige-links)
+- [Weiterführende Informationen](#weiterführende-informationen)
 - [Kontakt & Support](#kontakt--support)
 
 ---
