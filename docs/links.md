@@ -5,7 +5,7 @@ Telematikinfrastruktur (TI) und der Anwendungen für Privatversicherte.
 
 ## Inhaltsverzeichnis
 - [Implementierungsleitfäden (gematik)](#implementierungsleitfäden-gematik)
-- [E-Rezept & Verordnung (KBV)](#e-rezept--verordnung-kbv)
+- [E-Rezept](#e-rezept)
 - [FHIR-Profile](#fhir-profile)
 
 ## Implementierungsleitfäden (gematik)
